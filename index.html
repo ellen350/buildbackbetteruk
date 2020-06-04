@@ -90,15 +90,14 @@
           : url
       };
     };
-    //YOUR TURN: add your Mapbox token 
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZWxsZW4zNTAiLCJhIjoiY2tiMG5pcG56MDluNTM1bWU5NnJoZXB5eCJ9.SACx8CmrvvBH5ukO20qs0g'; //Mapbox token 
-    var map = new mapboxgl.Map({
-      container: 'map', // container id
-      style: mapbox://styles/mapbox/light-v10, //stylesheet location
-      center: [-122.411464, 37.7852299], // starting position
-      zoom: 10,// starting zoom
-      transformRequest: transformRequest
-    });
+     // YOUR TURN: add your Mapbox access token 
+      mapboxgl.accessToken = 'pk.eyJ1IjoiZWxsZW4zNTAiLCJhIjoiY2tiMG5pcG56MDluNTM1bWU5NnJoZXB5eCJ9.SACx8CmrvvBH5ukO20qs0g';
+      var map = new mapboxgl.Map({
+        container: 'map', // container id
+        style: 'mapbox://styles/mapbox/streets-v11', // YOUR TURN: choose a style: https://docs.mapbox.com/api/maps/#styles
+        center: [-122.411464, 37.7852299], // starting position [lng, lat]
+        zoom: 9 // starting zoom
+      });
 
     $(document).ready(function () {
       $.ajax({
