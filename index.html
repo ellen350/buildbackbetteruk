@@ -94,7 +94,7 @@
     mapboxgl.accessToken = 'pk.eyJ1IjoiZWxsZW4zNTAiLCJhIjoiY2tiMG5pcG56MDluNTM1bWU5NnJoZXB5eCJ9.SACx8CmrvvBH5ukO20qs0g'; //Mapbox token 
     var map = new mapboxgl.Map({
       container: 'map', // container id
-      style: 'mapbox://styles/mapbox/light-v10', //stylesheet location
+      style: mapbox://styles/mapbox/light-v10, //stylesheet location
       center: [-122.411464, 37.7852299], // starting position
       zoom: 10,// starting zoom
       transformRequest: transformRequest
@@ -104,7 +104,7 @@
       $.ajax({
         type: "GET",
         //YOUR TURN: Replace with csv export link
-        url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSLBh9AtPPNXvM62veegtgAAtHHd1rPpQsfulyFqBKieyC7e5nmXl3sDWjev_AhCkVaIVQoXYWlsogg/pub?output=csv',
+        url: 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSLBh9AtPPNXvM62veegtgAAtHHd1rPpQsfulyFqBKieyC7e5nmXl3sDWjev_AhCkVaIVQoXYWlsogg/pubhtml',
         dataType: "text",
         success: function (csvData) { makeGeoJSON(csvData); }
       });
