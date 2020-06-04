@@ -91,7 +91,7 @@
       };
     };
     //YOUR TURN: add your Mapbox token 
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZWxsZW4zNTAiLCJhIjoiY2tiMG5pcG56MDluNTM1bWU5NnJoZXB5eCJ9.SACx8CmrvvBH5ukO20qs0g'; //Mapbox token 
+    mapboxgl.accessToken = pk.eyJ1IjoiZWxsZW4zNTAiLCJhIjoiY2tiMG5pcG56MDluNTM1bWU5NnJoZXB5eCJ9.SACx8CmrvvBH5ukO20qs0g; //Mapbox token 
     var map = new mapboxgl.Map({
       container: 'map', // container id
       style: mapbox://styles/mapbox/streets-v11, //stylesheet location
@@ -99,7 +99,7 @@
       zoom: 10,// starting zoom
       transformRequest: transformRequest
     });
-
+    
     $(document).ready(function () {
       $.ajax({
         type: "GET",
