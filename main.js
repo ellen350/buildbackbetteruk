@@ -30,7 +30,6 @@
 
     const loadmap = (data) => {
       const featureData = data.map((item) => {
-        console.log(item, "item")
         return {
           "type": "Feature",
           "geometry": {
