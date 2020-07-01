@@ -21,10 +21,10 @@
       type: "GET",
       //YOUR TURN: Replace with csv export link
       url:
-        "http://gsx2json.com/api?id=1L8uBgAWy1zc2BJNuBVHe_ymYM3GNxIcLAuydN0W6dQQ",
+        "https://spreadsheets-to-maps.herokuapp.com/api/v1/buildbackbetteruk",
       dataType: "json",
       success: function (csvData) {
-        makeGeoJSON(csvData.rows);
+        makeGeoJSON(csvData.data);
       },
     });
 
